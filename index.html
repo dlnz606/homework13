@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Космическое путешествие</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">Space Explorer</div>
+      <nav>
+        <ul>
+          <li><a href="#about">О космосе</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#join">Регистрация</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Добро пожаловать в космос!</h1>
+      <button id="openModal" class="explore-btn">Исследовать Вселенную</button>
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <p>Добро пожаловать на борт звездолёта!</p>
+          <button id="closeModal">Закрыть</button>
+        </div>
+      </div>
+      </div>
+
+      <section id="about">
+        <video autoplay muted loop id="background-video">
+          <source src="/space.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="content">
+          <h2>Захватывающая бесконечность</h2>
+          <p>
+            Космос — это бескрайняя вселенная, полная тайн, загадок и возможностей.
+            От галактик, возраст которых превышает миллиарды лет, до экзопланет,
+            потенциально пригодных для жизни, наш путь к звёздам только начинается.
+          </p>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Исследуйте планеты</h2>
+        <div class="slider">
+          <button id="prev">⬅</button>
+          <a href="sun.html">
+            <img
+              src="https://png.pngtree.com/png-vector/20240623/ourmid/pngtree-a-close-up-of-sun-with-bright-yellow-center-generative-ai-png-image_12815432.png"
+              class="active"
+              alt="Солнце"
+          /></a>
+          <a href="earth.html">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/021/657/617/small_2x/green-earth-planet-free-png.png"
+              alt="Земля"
+          /></a>
+          <a href="mars.html">
+            <img
+              src="https://www.atomic-energy.ru/files/taxonomy/mars-1-1.png"
+              alt="Марс"
+            />
+          </a>
+          <button id="next">➡</button>
+        </div>
+      </section>
+
+      <section id="join">
+        <h2>Присоединяйтесь к миссии</h2>
+        <form id="form">
+          
+          <span id="emailError" class="error"></span>
+          <br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Введите email"
+          />
+          <br />
+          <span id="passwordError" class="error"></span>
+          <br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Введите пароль"
+          />
+          <br />
+          <button type="submit">Старт</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Space Explorer | Контакты: info@spaceexp.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
